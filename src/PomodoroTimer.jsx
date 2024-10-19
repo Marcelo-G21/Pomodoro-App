@@ -1,5 +1,8 @@
+import TimerDisplay from "./components/TimerDisplay";
+
 const PomodoroTimer = () => {
   return (
+   <div>
     <div className="title-container w-full mt-8">
       <div className="flex items-center justify-center w-full">
         <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
@@ -9,6 +12,9 @@ const PomodoroTimer = () => {
         <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
       </div>
     </div>
+    <TimerDisplay/>
+   </div>
+    
   );
 };
 
