@@ -1,5 +1,9 @@
+import AdjustButton from './AdjustButton';
+
 const TimeAdjuster = () => {
-  return <div>TimeAdjuster</div>;
+  return <div>
+    <AdjustButton />
+  </div>;
 };
 
 export default TimeAdjuster;
