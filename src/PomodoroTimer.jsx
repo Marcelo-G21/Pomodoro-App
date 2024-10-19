@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import TimerDisplay from './components/TimerDisplay';
 import workGif from './assets/bunny-work.gif';
 import breakGif from './assets/bunny-break.gif';
+import ControlButtons from './components/ControlButtons';
 
 const PomodoroTimer = () => {
   const [isWorking, setIsWorking] = useState(true);
@@ -62,6 +63,7 @@ const PomodoroTimer = () => {
           formatTime={formatTime}
           calculateProgress={calculateProgress}
         />
+        <ControlButtons/>
       </div>
     </div>
   );
