@@ -1,0 +1,17 @@
+
+*.config.js
+*.config.ts
+*.json
+
+
+/build
+/dist
+
+
+/node_modules
+
+
+*.log
+*.tmp
+
+/tests
