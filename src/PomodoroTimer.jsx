@@ -68,6 +68,7 @@ const PomodoroTimer = () => {
       </div>
       <div className="flex flex-col p-6 sm:p-8 items-center w-full pl-12 pr-12">
         <TimeAdjuster />
+        
         <TimerDisplay
           isWorking={isWorking}
           workGif={workGif}
