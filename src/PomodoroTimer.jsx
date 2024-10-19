@@ -63,7 +63,7 @@ const PomodoroTimer = () => {
           formatTime={formatTime}
           calculateProgress={calculateProgress}
         />
-        <ControlButtons/>
+        <ControlButtons />
       </div>
     </div>
   );

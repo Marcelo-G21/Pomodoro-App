@@ -1,7 +1,5 @@
 const TimeAdjuster = () => {
-  return (
-    <div>TimeAdjuster</div>
-  )
-}
+  return <div>TimeAdjuster</div>;
+};
 
-export default TimeAdjuster
+export default TimeAdjuster;

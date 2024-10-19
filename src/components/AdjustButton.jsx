@@ -1,7 +1,5 @@
 const AdjustButton = () => {
-  return (
-    <div>AdjustButton</div>
-  )
-}
+  return <div>AdjustButton</div>;
+};
 
-export default AdjustButton
+export default AdjustButton;

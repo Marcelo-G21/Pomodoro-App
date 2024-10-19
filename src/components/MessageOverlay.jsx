@@ -1,7 +1,5 @@
 const MessageOverlay = () => {
-  return (
-    <div>MessageOverlay</div>
-  )
-}
+  return <div>MessageOverlay</div>;
+};
 
-export default MessageOverlay
+export default MessageOverlay;
