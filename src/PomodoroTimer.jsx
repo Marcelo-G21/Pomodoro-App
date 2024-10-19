@@ -7,13 +7,14 @@ import ControlButtons from './components/ControlButtons';
 const PomodoroTimer = () => {
   const [isWorking, setIsWorking] = useState(true);
   const [time, setTime] = useState(25 * 60);
+  const [isActive, setIsActive] = useState(false);
   const [workTime, setWorkTime] = useState(25);
   const [breakTime, setBreakTime] = useState(5);
 
   useEffect(() => {
     let interval = null;
 
-    if (time > 0) {
+    if (isActive && time > 0) {
       interval = setInterval(() => {
         setTime(time => time - 1);
       }, 1000);
@@ -28,7 +29,17 @@ const PomodoroTimer = () => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [time, isWorking, workTime, breakTime]);
+  }, [isActive, time, isWorking, workTime, breakTime]);
+
+  const toggleTimer = () => {
+    setIsActive(!isActive);
+  };
+
+  const resetTimer = () => {
+    setIsActive(false);
+    setTime(workTime * 60);
+    setIsWorking(true);
+  };
 
   const formatTime = timeInSeconds => {
     const minutes = Math.floor(timeInSeconds / 60);
@@ -63,7 +74,11 @@ const PomodoroTimer = () => {
           formatTime={formatTime}
           calculateProgress={calculateProgress}
         />
-        <ControlButtons />
+        <ControlButtons
+          isActive={isActive}
+          toggleTimer={toggleTimer}
+          resetTimer={resetTimer}
+        />
       </div>
     </div>
   );
