@@ -50,6 +50,18 @@ const PomodoroTimer = () => {
       .padStart(2, '0')}`;
   };
 
+  const adjustTime = (amount, isWorkTime) => {
+    if (!isActive) {
+      if (isWorkTime) {
+        setWorkTime(Math.max(1, workTime + amount));
+        if (isWorking) setTime((workTime + amount) * 60);
+      } else {
+        setBreakTime(Math.max(1, breakTime + amount));
+        if (!isWorking) setTime((breakTime + amount) * 60);
+      }
+    }
+  };
+
   const calculateProgress = () => {
     const totalTime = isWorking ? workTime * 60 : breakTime * 60;
     return ((totalTime - time) / totalTime) * 100;
@@ -67,8 +79,15 @@ const PomodoroTimer = () => {
         </div>
       </div>
       <div className="flex flex-col p-6 sm:p-8 items-center w-full pl-12 pr-12">
-        <TimeAdjuster />
-        
+      <div className="flex items-center justify-between w-full">
+              <TimeAdjuster
+                workTime={workTime}
+                breakTime={breakTime}
+                adjustTime={adjustTime}
+                isActive={isActive}
+              />
+            </div>
+
         <TimerDisplay
           isWorking={isWorking}
           workGif={workGif}
