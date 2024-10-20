@@ -89,39 +89,42 @@ const PomodoroTimer = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-indigo-100">
-      <div className="title-container w-full mt-8">
-        <div className="flex items-center justify-center w-full">
-          <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
-          <h1 className="text-4xl text-gray-800 mx-4 text-center">
-            Pomodoro Timer
-          </h1>
-          <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
+      <div className="w-full max-w-4xl mx-auto md:mb-8 flex flex-col flex-grow items-center">
+        <div className="title-container w-full mt-8">
+          <div className="flex items-center justify-center w-full">
+            <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
+            <h1 className="text-4xl text-gray-800 mx-4 text-center">
+              Pomodoro Timer
+            </h1>
+            <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
+          </div>
         </div>
-      </div>
-      <div className="bg-indigo-200 bg-opacity-80 p-6 sm:p-8 lg:p-12 mt-8 w-full flex flex-col items-center justify-center flex-grow">
-        <div className="flex flex-col items-center w-full pl-12 pr-12">
-          <div className="flex items-center justify-between w-full">
-            <TimeAdjuster
-              workTime={workTime}
-              breakTime={breakTime}
-              adjustTime={adjustTime}
-              isActive={isActive}
+
+        <div className="bg-indigo-200 bg-opacity-80 p-6 sm:p-8 lg:p-12 mt-8 w-full flex flex-col items-center justify-center flex-grow">
+          <div className="flex flex-col items-center w-full pl-12 pr-12">
+            <div className="flex items-center justify-between w-full">
+              <TimeAdjuster
+                workTime={workTime}
+                breakTime={breakTime}
+                adjustTime={adjustTime}
+                isActive={isActive}
+              />
+            </div>
+            <TimerDisplay
+              isWorking={isWorking}
+              workGif={workGif}
+              breakGif={breakGif}
+              time={time}
+              formatTime={formatTime}
+              calculateProgress={calculateProgress}
             />
           </div>
-
-          <TimerDisplay
-            isWorking={isWorking}
-            workGif={workGif}
-            breakGif={breakGif}
-            time={time}
-            formatTime={formatTime}
-            calculateProgress={calculateProgress}
-          />
           <ControlButtons
             isActive={isActive}
             toggleTimer={toggleTimer}
             resetTimer={resetTimer}
           />
+
           <MessageOverlay showMessage={showMessage} message={message} />
         </div>
       </div>
