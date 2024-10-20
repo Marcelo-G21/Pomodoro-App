@@ -4,6 +4,8 @@ import TimeAdjuster from './components/TimeAdjuster';
 import workGif from './assets/bunny-work.gif';
 import breakGif from './assets/bunny-break.gif';
 import ControlButtons from './components/ControlButtons';
+import BreakSound from '../src/assets/Break.mp3';
+import WorkSound from '../src/assets/Work.mp3';
 
 const PomodoroTimer = () => {
   const [isWorking, setIsWorking] = useState(true);
@@ -11,6 +13,9 @@ const PomodoroTimer = () => {
   const [isActive, setIsActive] = useState(false);
   const [workTime, setWorkTime] = useState(25);
   const [breakTime, setBreakTime] = useState(5);
+
+  const workAudioRef = useRef(new Audio(WorkSound));
+  const breakAudioRef = useRef(new Audio(BreakSound));
 
   useEffect(() => {
     let interval = null;
@@ -23,9 +28,18 @@ const PomodoroTimer = () => {
       const newIsWorking = !isWorking;
       setIsWorking(newIsWorking);
       setTime(newIsWorking ? workTime * 60 : breakTime * 60);
+
+      if (newIsWorking) {
+        workAudioRef.current.play();
+      } else {
+        breakAudioRef.current.play();
+      }
+
     } else {
       if (interval) clearInterval(interval);
     }
+
+    
 
     return () => {
       if (interval) clearInterval(interval);
