@@ -78,29 +78,31 @@ const PomodoroTimer = () => {
           <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
         </div>
       </div>
-      <div className="flex flex-col p-6 sm:p-8 items-center w-full pl-12 pr-12">
-      <div className="flex items-center justify-between w-full">
-              <TimeAdjuster
-                workTime={workTime}
-                breakTime={breakTime}
-                adjustTime={adjustTime}
-                isActive={isActive}
-              />
-            </div>
+      <div className="bg-indigo-200 bg-opacity-80 p-6 sm:p-8 lg:p-12 mt-8 w-full flex flex-col items-center justify-center flex-grow">
+        <div className="flex flex-col items-center w-full pl-12 pr-12">
+          <div className="flex items-center justify-between w-full">
+            <TimeAdjuster
+              workTime={workTime}
+              breakTime={breakTime}
+              adjustTime={adjustTime}
+              isActive={isActive}
+            />
+          </div>
 
-        <TimerDisplay
-          isWorking={isWorking}
-          workGif={workGif}
-          breakGif={breakGif}
-          time={time}
-          formatTime={formatTime}
-          calculateProgress={calculateProgress}
-        />
-        <ControlButtons
-          isActive={isActive}
-          toggleTimer={toggleTimer}
-          resetTimer={resetTimer}
-        />
+          <TimerDisplay
+            isWorking={isWorking}
+            workGif={workGif}
+            breakGif={breakGif}
+            time={time}
+            formatTime={formatTime}
+            calculateProgress={calculateProgress}
+          />
+          <ControlButtons
+            isActive={isActive}
+            toggleTimer={toggleTimer}
+            resetTimer={resetTimer}
+          />
+        </div>
       </div>
     </div>
   );
