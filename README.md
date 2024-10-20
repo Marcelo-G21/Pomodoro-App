@@ -1,6 +1,6 @@
 # 📅 Pomodoro Timer App
 
-![Pomodoro Timer](./src/assets/bunny-work.gif)
+![Pomodoro Timer](./src/assets/bunny-work.gif) ![Pomodoro Timer Screenshot](./public/pomodoro-timer.png)
 
 ## Project description
 
