@@ -14,6 +14,8 @@ const PomodoroTimer = () => {
   const [isActive, setIsActive] = useState(false);
   const [workTime, setWorkTime] = useState(25);
   const [breakTime, setBreakTime] = useState(5);
+  const [showMessage, setShowMessage] = useState(false);
+  const [message, setMessage] = useState('');
 
   const workAudioRef = useRef(new Audio(WorkSound));
   const breakAudioRef = useRef(new Audio(BreakSound));
@@ -29,6 +31,8 @@ const PomodoroTimer = () => {
       const newIsWorking = !isWorking;
       setIsWorking(newIsWorking);
       setTime(newIsWorking ? workTime * 60 : breakTime * 60);
+      setMessage(newIsWorking ? 'Back to Work!' : 'Time for a Break!');
+      setShowMessage(true);
 
       if (newIsWorking) {
         workAudioRef.current.play();
@@ -36,11 +40,12 @@ const PomodoroTimer = () => {
         breakAudioRef.current.play();
       }
 
+      setTimeout(() => {
+        setShowMessage(false);
+      }, 2000);
     } else {
       if (interval) clearInterval(interval);
     }
-
-    
 
     return () => {
       if (interval) clearInterval(interval);
@@ -117,8 +122,8 @@ const PomodoroTimer = () => {
             toggleTimer={toggleTimer}
             resetTimer={resetTimer}
           />
-          <MessageOverlay />
-        </div>
+          <MessageOverlay showMessage={showMessage} message={message} />
+          </div>
       </div>
     </div>
   );
