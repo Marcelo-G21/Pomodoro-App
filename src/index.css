@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Galada&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+  font-family: 'Galada', curvy; 
+  font-size: 2rem; 
+  text-align: center;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px); 
+  }
+}
