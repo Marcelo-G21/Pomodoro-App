@@ -123,7 +123,7 @@ const PomodoroTimer = () => {
             resetTimer={resetTimer}
           />
           <MessageOverlay showMessage={showMessage} message={message} />
-          </div>
+        </div>
       </div>
     </div>
   );
