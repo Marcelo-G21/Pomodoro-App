@@ -2,80 +2,79 @@
 
 ![Pomodoro Timer](./src/assets/bunny-work.gif)
 
-## Descripción del proyecto
+## Project description
 
-La **Pomodoro Timer App** es una aplicación diseñada para ayudar a las personas a mejorar su productividad mediante la técnica Pomodoro. Permite ajustar los tiempos de trabajo y descanso, iniciar/pausar el temporizador, y reiniciar las sesiones fácilmente. Esta aplicación está construida con tecnologías modernas para ofrecer una experiencia rápida y fluida.
-
----
-
-## 🚀 Tecnologías utilizadas
-
-Este proyecto se desarrolló utilizando las siguientes tecnologías:
-
-- **[React](https://reactjs.org/)**: Una biblioteca de JavaScript para la construcción de interfaces de usuario.
-- **[Vite](https://vitejs.dev/)**: Un entorno de desarrollo rápido y eficiente para aplicaciones web modernas.
-- **[lucide-react](https://lucide.dev/)**: Un paquete de íconos ligeros y optimizados para React.
-- **[Tailwind CSS](https://tailwindcss.com/)**: Un framework de CSS que permite un diseño responsivo y moderno sin esfuerzo.
-- **[PostCSS](https://postcss.org/)**: Un procesador de CSS que transforma tu código mediante plugins.
-- **[ESLint](https://eslint.org/)**: Una herramienta para asegurar la calidad y consistencia en el código JavaScript.
-- **[Autoprefixer](https://github.com/postcss/autoprefixer)**: Un plugin para PostCSS que agrega prefijos CSS automáticamente para garantizar compatibilidad con navegadores.
-- **[Prettier](https://prettier.io/)**: Un formateador de código para mantener el código legible y consistente.
+The **Pomodoro Timer App** is an application designed to help people improve their productivity using the Pomodoro technique. It allows you to set work and break times, start/pause the timer, and restart sessions easily. This app is built with modern technologies to provide a fast and smooth experience.
 
 ---
 
-## 💡 ¿Por qué usar React con Vite?
+## 🚀 Technologies used.
+
+This project was developed using the following technologies:
+
+- **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces.
+- **[Vite](https://vitejs.dev/)**: A fast and efficient development environment for modern web applications.
+- **[lucide-react](https://lucide.dev/)**: A lightweight, React-optimized icon package.
+- **[Tailwind CSS](https://tailwindcss.com/)**: A CSS framework that enables effortless modern responsive design.
+- **[PostCSS](https://postcss.org/)**: A CSS processor that transforms your code via plugins.
+- **[ESLint](https://eslint.org/)**: A tool to ensure quality and consistency in JavaScript code.
+- **[Autoprefixer](https://github.com/postcss/autoprefixer)**: A PostCSS plugin that adds CSS prefixes automatically to ensure cross-browser compatibility.
+- **[Prettier](https://prettier.io/)**: A code formatter to keep code readable and consistent.
+
+---
+
+## 💡 Why use React with Vite?
 
 ### Vite
 
-Vite es un **bundler ultrarrápido** que permite tiempos de recarga de desarrollo increíblemente bajos y mejora la experiencia del desarrollador. Algunos de los motivos por los que se eligió Vite en este proyecto son:
+Vite is an ultra-fast **bundler** that allows for incredibly low development reload times and improves the developer experience. Some of the reasons Vite was chosen in this project are:
 
-- **Velocidad**: La carga inicial es extremadamente rápida gracias a su compilador basado en ESModules.
-- **Hot Module Replacement (HMR)**: Vite permite que los cambios en el código se reflejen instantáneamente en la aplicación sin necesidad de una recarga completa.
-- **Configuración sencilla**: Comparado con otras soluciones como Webpack, Vite tiene una configuración más simple y lista para usar.
+- **Speed**: Initial load is extremely fast thanks to its ESModules-based compiler.
+- **Hot Module Replacement (HMR)**: Vite allows code changes to be instantly reflected in the application without the need for a full reload.
+- **Simple configuration**: Compared to other solutions such as Webpack, Vite has a simpler out-of-the-box configuration.
 
 ### React
 
-React es una **biblioteca modular** que permite crear componentes reutilizables y mantener un flujo de datos unidireccional para aplicaciones de cualquier escala. Elegimos React porque:
+React is a **modular library** that allows you to create reusable components and maintain a unidirectional data flow for applications of any scale. We chose React because:
 
-- **Componentización**: Facilita la creación de interfaces de usuario complejas mediante la descomposición en componentes más pequeños y reutilizables.
-- **Virtual DOM**: Optimiza el rendimiento al actualizar solo los elementos del DOM que han cambiado.
-- **Amplia comunidad y ecosistema**: React cuenta con una gran comunidad de soporte y una vasta cantidad de herramientas y bibliotecas que facilitan el desarrollo.
+- **Componentization**: It facilitates the creation of complex user interfaces by decomposing them into smaller, reusable components.
+- **Virtual DOM**: Optimizes performance by updating only DOM elements that have changed.
+- **Broad community and ecosystem**: React has a large support community and a vast number of tools and libraries that facilitate development.
 
 
-## 🛠️ Funcionalidades principales
+## 🛠️ Main functionalities
 
-- **Inicio y pausa del temporizador**: Permite al usuario iniciar y detener el temporizador de forma sencilla.
-- **Ajuste del tiempo de trabajo y descanso**: Los usuarios pueden personalizar la duración de sus sesiones de trabajo y descanso.
-- **Control de sesiones**: Cuenta con botones de reinicio y ajuste de tiempo para mantener el control total del temporizador.
-- **Mensajes y alertas**: Se notificará al usuario cuando una sesión termine o cuando inicie el tiempo de descanso.
-
+- **Timer start and pause**: Allows users to easily start and stop the timer.
+- **Work and rest time setting**: Users can customize the duration of their work and rest sessions.
+- **Session control**: Features reset and time adjustment buttons to maintain full control of the timer.
+- **Messages and alerts**: The user will be notified when a session ends or when the break time starts.
 ---
 
-## 🔧 Instalación y uso
+## 🔧 Installation and use.
 
-### Requisitos previos
+### Prerequisites
 
-Asegúrate de tener **Node.js** y **npm** instalados en tu máquina.
+Make sure you have **Node.js** and **npm** installed on your machine.
 
-### Pasos para la instalación
+### Installation steps.
 
-1. Clona el repositorio:
+1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/usuario/proyecto-pomodoro.git
-   ```
+```bash
+git clone https://github.com/usuario/proyecto-pomodoro.git
+```
 
-2. Instala las dependencias del proyecto:
+2. Install the project dependencies:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. Inicia la aplicación en modo de desarrollo:
-    ```bash
-   npm run dev
-   ```
-    
-4. Abre tu navegador en http://http://localhost:5173 para ver la aplicación en funcionamiento.
+3. Start the application in development mode:
 
----
+```bash
+npm run dev
+```
+
+4. Open your browser at http://http://localhost:5173 to see the application running.
+
