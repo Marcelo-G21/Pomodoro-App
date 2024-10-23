@@ -7,8 +7,8 @@ const TimerDisplay = ({
   calculateProgress,
 }) => {
   return (
-    <div className="relative w-full max-w-xs md:max-w-80 md:-mt-20 mb-8 aspect-w-1 aspect-h-1">
-      <svg className="w-full h-full" viewBox="0 0 100 100">
+    <div className="relative w-full max-w-xs md:max-w-lg md:-mt-20 mb-8 aspect-w-1 aspect-h-1">
+      <svg className="w-full h-full md:w-128 md:h-128" viewBox="0 0 100 100">
         <circle
           className="text-indigo-300"
           strokeWidth="4"
@@ -42,7 +42,7 @@ const TimerDisplay = ({
         <img
           src={isWorking ? workGif : breakGif}
           alt={isWorking ? 'Working time' : 'Break time'}
-          className="rounded-full w-40 h-40"
+          className="rounded-full w-40 h-40 md:w-72 md:h-72"
           width={160}
           height={160}
           style={{ top: '-26px', position: 'relative' }}
@@ -51,7 +51,7 @@ const TimerDisplay = ({
 
       <div className="absolute inset-0 flex items-center justify-center z-20">
         <span
-          className="text-4xl font-bold text-gray-800 relative"
+          className="text-4xl md:text-6xl md:mt-40 font-bold text-gray-800 relative"
           style={{ top: '60px' }}
         >
           {formatTime(time)}

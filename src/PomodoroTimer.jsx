@@ -89,11 +89,11 @@ const PomodoroTimer = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-indigo-100">
-      <div className="w-full max-w-4xl mx-auto md:mb-8 flex flex-col flex-grow items-center">
+      <div className="w-full max-w-6xl mx-auto md:mb-8 flex flex-col flex-grow items-center">
         <div className="title-container w-full mt-8">
           <div className="flex items-center justify-center w-full">
             <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
-            <h1 className="text-4xl text-gray-800 mx-4 text-center">
+            <h1 className="text-4xl md:text-6xl text-gray-800 mx-4 text-center">
               Pomodoro Timer
             </h1>
             <div className="flex-grow h-2 bg-indigo-400 md:h-2"></div>
