@@ -89,7 +89,7 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/usuario/proyecto-pomodoro.git
+git clone https://github.com/Marcelo-G21/Pomodoro-App.git
 ```
 
 2. Install the project dependencies:
