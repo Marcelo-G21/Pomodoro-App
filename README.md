@@ -1,10 +1,45 @@
 # 📅 Pomodoro Timer App
 
-![Pomodoro Timer](./src/assets/bunny-work.gif) ![Pomodoro Timer Screenshot](./public/pomodoro-timer.png)
+![Pomodoro Timer](./src/assets/bunny-work.gif) ![Bunny Break](./src/assets/bunny-break.gif)
 
 ## Project description
 
 The **Pomodoro Timer App** is an application designed to help people improve their productivity using the Pomodoro technique. It allows you to set work and break times, start/pause the timer, and restart sessions easily. This app is built with modern technologies to provide a fast and smooth experience.
+
+---
+
+## 🛠️ Main functionalities
+
+- **Timer start and pause**: Allows users to easily start and stop the timer.
+
+  <img src="./public/Screen-2.gif" alt="Start Pause" align="left"/>
+
+  <br clear="left"/>
+
+- **Work and rest time setting**: Users can customize the duration of their work and rest sessions.
+
+  <img src="./public/Screen-1.gif" alt="Adjust Buttons" align="left"/>
+
+  <br clear="left"/>
+
+- **Session control**: Features reset and time adjustment buttons to maintain full control of the timer.
+
+  <img src="./public/Screen-3.gif" alt="Reset" align="left"/>
+
+  <br clear="left"/>
+
+- **Messages and alerts**: The user will be notified when a session ends or when the break time starts.
+
+  <img src="./public/Screen-4.gif" alt="Break" align="left"/>
+  <img src="./public/Screen-5.gif" alt="Session" align="left"/>
+
+  <br clear="left"/>
+
+- **Responsive design**: Ensures a smooth user experience across various devices, including desktop and mobile.
+  
+  <img src="./public/Screen-PC.gif" alt="Responsive Design" align="left"/>
+
+  <br clear="left"/>
 
 ---
 
@@ -41,13 +76,6 @@ React is a **modular library** that allows you to create reusable components and
 - **Virtual DOM**: Optimizes performance by updating only DOM elements that have changed.
 - **Broad community and ecosystem**: React has a large support community and a vast number of tools and libraries that facilitate development.
 
-
-## 🛠️ Main functionalities
-
-- **Timer start and pause**: Allows users to easily start and stop the timer.
-- **Work and rest time setting**: Users can customize the duration of their work and rest sessions.
-- **Session control**: Features reset and time adjustment buttons to maintain full control of the timer.
-- **Messages and alerts**: The user will be notified when a session ends or when the break time starts.
 ---
 
 ## 🔧 Installation and use.
@@ -78,4 +106,14 @@ npm run dev
 
 4. Open your browser at http://http://localhost:5173 to see the application running.
 
->>>>>>> e78ac09e055ee41128b8305aca38a575ab68b657
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and make a pull request with your changes. Make sure to follow the coding guidelines and run tests before submitting a PR.
+
+1. Fork the project
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to your branch (`git push origin feature-branch`)
+5. Open a Pull Request
